@@ -29,6 +29,10 @@ router.get('/add', function(req, res, next) {
   res.render('add', { title: 'เพิ่มข้อมูล' });
 });
 
+router.get('/gift', function(req, res, next) {
+  res.render('gift', { title: 'เพิ่มข้อมูล' });
+});
+
 router.post('/add', function(req, res, next) {
   const name = req.body.name;
   const wish = req.body.wish;
